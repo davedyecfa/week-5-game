@@ -1,0 +1,67 @@
+/********** Layout *************/
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh;  /* Fallback for browsers do NOT support vh unit */
+}
+
+.logo-container {
+  margin-top: 60px;
+}
+
+.play-area {
+  border-radius: 10px;
+  margin-top: 10px;
+  min-height: 400px;
+  height: auto;
+}
+
+#question {
+  margin-bottom: 20px;
+}
+
+#timer {
+  margin-bottom: 30px;
+}
+
+button {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+#start-button {
+  margin-top: 160px;
+}
+
+.active-image {
+  height: 250px;
+  width: 350px;
+  margin: 0 auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+
+/********** Colors *************/
+body {
+  background: url("../images/ghost-in-the-shell-background-image.jpg") no-repeat;
+  background-size: cover;
+}
+
+
+/********** Fonts *************/
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+}
+
+h1 {
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 28px;
+}
+
+
+/********** Images *************/
