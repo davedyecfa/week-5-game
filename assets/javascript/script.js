@@ -42,7 +42,7 @@ $(document).ready(function () {
             this.setQuestion();
         },
 
-        shuffle: function(a) {
+        shuffle: function (a) {
             var j, x, i;
             for (i = a.length; i; i--) {
                 j = Math.floor(Math.random() * i);
@@ -55,12 +55,14 @@ $(document).ready(function () {
         setQuestion: function () {
             this.answerStatus = null;
             this.currentQuestion = this.questions[this.questionIndex];
+            console.log(this.currentQuestion);
             this.setPlayArea();
             this.startTimer();
         },
 
         setPlayArea: function () {
-            var questionArray = this.currentQuestion.options;
+            var questionArray = this.currentQuestion.answers;
+            console.log(questionArray);
             this.shuffle(questionArray);
             for (var optionIndex = 0; optionIndex < questionArray.length; optionIndex++) {
                 var optionNumbers = "option-" + (optionIndex + 1);
@@ -95,7 +97,7 @@ $(document).ready(function () {
 
         setImange: function () {
             $("#image-area").addClass("active-image");
-            $("#image-area").attr("src", this.currentQuesiton.answerImage);
+            $("#image-area").attr("src", this.currentQuestion.answerImage);
 
         },
 
